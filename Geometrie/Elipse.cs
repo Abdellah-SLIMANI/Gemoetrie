@@ -19,7 +19,11 @@ namespace Geometrie
         }
 
         //Setters and Getters
-        public Point Center { get; set; }
+        public Point Center
+        { 
+            get;
+            set;
+        }
         public double BigRadius
         {
             get => bigRadius;
@@ -31,7 +35,8 @@ namespace Geometrie
                 {
                     bigRadius = smallRadius;
                     smallRadius = value;
-                }else bigRadius = value;
+                }else 
+                    bigRadius = value;
             }
         }
 
@@ -52,9 +57,21 @@ namespace Geometrie
         }
 
         //Air
-        public virtual double Air { get => Math.PI * smallRadius * bigRadius; }
+        public virtual double Air 
+        {
+            get
+            {
+                return Math.PI * smallRadius * bigRadius;
+            }
+        }
 
         //Circonference
-        public virtual double Circonference { get =>Math.Sqrt(Math.Pow(bigRadius,2)+Math.Pow(smallRadius,2)/2)*Math.PI*2; }
+        public virtual double Circonference 
+        {
+            get 
+            { 
+               return Math.Sqrt(Math.Pow(bigRadius, 2) + Math.Pow(smallRadius, 2) / 2) * Math.PI * 2; 
+            }
+        }
     }
 }

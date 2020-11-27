@@ -40,6 +40,7 @@ namespace Geometrie
         public string stateWith(Droite droite)
         {
             string state = "intersection";
+            //Det
             double helper = (droite.P1.X * this.P2.Y) - (this.P1.X * droite.P2.Y);
             if(helper == 0)
             {

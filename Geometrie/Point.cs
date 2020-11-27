@@ -9,7 +9,11 @@ namespace Geometrie
         private double x, y;
 
         //constructeur
-        public Point(double px = 0, double py = 0) => (x, y) = (px, py);
+        public Point(double px = 0, double py = 0)
+        {
+            x = px;
+            y = py;
+        }
 
         //Setter and Getter
         public double X

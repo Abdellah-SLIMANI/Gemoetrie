@@ -31,6 +31,10 @@ namespace Geometrie
             Console.WriteLine("***********************************\n");
             /*End Of Point Menu */
 
+
+
+
+
             /* Start of Droite Menu */
             Console.WriteLine("******************* DROITE ****************");
             //init of Lines
@@ -43,6 +47,10 @@ namespace Geometrie
 
             Console.WriteLine("***********************************");
             /*End Of Droite Menu */
+
+
+
+
 
             /* Start of Cercle Menu */
             Console.WriteLine("******************* Circle ****************");
@@ -59,10 +67,14 @@ namespace Geometrie
             Console.WriteLine("***********************************");
             /*End Of Circle Menu */
 
+
+
+
+
             /* Start of Elipse Menu */
             Console.WriteLine("******************* Elipse ****************");
             //variables
-            Elipse Elipse1 = new Elipse(A, 20, 10);
+            Elipse Elipse1 = new Elipse(B, 20, 10);
             //Air
             Console.WriteLine(Elipse1.Air);
             //Circonference
